@@ -1,0 +1,35 @@
+/* DIRECTION: Codrops Scroll3DGrid engine (MIT) + барочная палитра. Cormorant Garamond / Jost. Золото — только тонкой линией и плоской заливкой. */
+:root{--color-bg:#071d18;--color-text:#f6f1e8;--color-link:#f6f1e8;--color-link-hover:#c2a050;--color-title:#c2a050;--grid-item-ratio:.8;--gold:#c2a050;--rose:#d4a2a3;--peach:#f0d2bd;--blue:#8da0aa;--wine:#3b0a17}
+body{font-family:'Cormorant Garamond',serif;font-weight:400;font-size:20px}
+.js .loading::after{background:var(--gold)}
+.top{position:fixed;z-index:50;top:0;left:0;right:0;display:flex;justify-content:space-between;align-items:baseline;padding:22px 4vw;pointer-events:none;mix-blend-mode:difference;color:#fff}
+.top b{font:italic 500 1.7rem 'Cormorant Garamond',serif;letter-spacing:.06em}
+.top span{font:400 .72rem Jost,sans-serif;letter-spacing:.35em;text-transform:uppercase}
+.intro{height:100vh;margin-bottom:10vh;background:radial-gradient(ellipse at 50% 55%,#5a1424 0,transparent 65%)}
+.intro__title-pre{font:400 clamp(.8rem,2vw,1.1rem) Jost,sans-serif;letter-spacing:.5em;color:var(--gold)}
+.intro__title-sub{font-style:italic;font-weight:300;line-height:.92;font-size:clamp(3rem,13vw,10rem);max-width:12ch;margin-top:1.2rem}
+.intro__info{font:300 .8rem Jost,sans-serif;letter-spacing:.3em;text-transform:uppercase}
+.grid__item{border-radius:3px}
+.sec{max-width:1150px;margin:0 auto;padding:22vh 6vw;display:grid;gap:2.2rem;font-family:Jost,sans-serif;font-weight:300}
+.sec p{max-width:38em;color:#e9e3d8;line-height:1.7;font-size:1.15rem}
+.sec .k{color:var(--gold);letter-spacing:.35em;font-size:.75rem;text-transform:uppercase;font-weight:400}
+.sec h2{font:italic 300 clamp(2.4rem,6.4vw,5.6rem)/1 'Cormorant Garamond',serif;letter-spacing:-.01em}
+.sec h2 em{color:var(--peach);text-decoration:underline;text-decoration-thickness:1px;text-decoration-color:var(--gold);text-underline-offset:.14em}
+.facts{display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid #c2a05077;margin-top:1rem}
+.facts div{padding:28px 20px 28px 0;border-bottom:1px solid #c2a05077}
+.facts dt{font:400 .7rem Jost,sans-serif;letter-spacing:.3em;color:var(--rose);text-transform:uppercase;margin-bottom:10px}
+.facts dd{font:italic 400 clamp(1.5rem,3vw,2.4rem)/1.15 'Cormorant Garamond',serif}
+ul{list-style:none;border-top:1px solid #c2a05066;counter-reset:l;padding:0}
+li{padding:22px 0 22px 56px;border-bottom:1px solid #c2a05066;position:relative;font-size:1.25rem;counter-increment:l}
+li:before{content:counter(l,lower-roman);position:absolute;left:0;top:18px;font:italic 300 1.8rem 'Cormorant Garamond',serif;color:var(--gold)}
+.outro{margin:0 auto;padding-bottom:6vh}
+.btn{display:flex;justify-content:space-between;align-items:center;max-width:620px;padding:28px 36px;background:var(--gold);color:#071d18!important;font:italic 600 2rem 'Cormorant Garamond',serif;outline:1px solid var(--gold);outline-offset:6px;transition:background .5s,color .5s,outline-offset .5s}
+.btn svg{width:34px;transition:transform .5s}
+.btn:hover{background:transparent;color:var(--gold)!important;outline-offset:10px}.btn:hover svg{transform:translateX(8px)}
+.soc{display:grid;grid-template-columns:1fr 1fr;gap:14px;max-width:620px}
+.soc a{display:flex;align-items:center;justify-content:center;gap:12px;padding:16px;border:1px solid #c2a05099;color:var(--gold);letter-spacing:.2em;font-size:.8rem;text-transform:uppercase;transition:.4s}
+.soc a:hover{background:var(--gold);color:#071d18}.soc svg{width:20px;height:20px;fill:currentColor}
+blockquote{margin:3rem 0 0;padding-left:28px;border-left:1px solid var(--gold);font:italic 300 clamp(1.5rem,2.4vw,2.1rem)/1.35 'Cormorant Garamond',serif;color:var(--peach)}
+blockquote small{display:block;font:400 .7rem Jost,sans-serif;letter-spacing:.25em;text-transform:uppercase;color:var(--blue);margin-top:12px}
+footer{margin-top:10vh;padding-top:3vh;border-top:1px solid #c2a05055;color:var(--blue);font-size:.75rem;letter-spacing:.2em;text-transform:uppercase}
+@media(max-width:700px){.facts{grid-template-columns:1fr}.top span{display:none}.btn{font-size:1.6rem;padding:22px}}
